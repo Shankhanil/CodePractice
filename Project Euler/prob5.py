@@ -32,6 +32,7 @@ def primeFactorize(N, Primes):
                 pf.append(i)
     finally:
         return pf
+
 if __name__ == "__main__":
     RANGE = 10
     primes = segSieve(RANGE)

@@ -18,18 +18,18 @@ def largePrime(n):
     if n % 2 == 0:
         return False
     
-    for i in range(3, int(m.sqrt(n)), 2):
+    for i in range(3, int(m.sqrt(n))+1, 2):
         if n % i == 0:
             return False
     return True
 if __name__ == "__main__":
 	
-    N = 13195
+    N = 600851475143 
     pf = N
     while pf > 2:
         if largePrime(pf) == True:
             if isPrimeFactor(N, pf) == True:
                 print(pf)
                 break
-        pf = pf-1
+        pf = pf-2
     
