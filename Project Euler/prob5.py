@@ -19,12 +19,40 @@ def segSieve(N):
         i = i+1
     return L
 
+def primeFactorize(N, Primes):
+    pf = []
+    try:
+        x = Primes.index(N)
+        pf.append(N)
+    except:
+        #while N != 0:
+        for i in Primes:
+            while N%i == 0:
+                N = N/i
+                pf.append(i)
+    finally:
+        return pf
 if __name__ == "__main__":
-    L = segSieve(10)
+    RANGE = 10
+    primes = segSieve(RANGE)
     M = 1
-    for i in L:
-        M = M*i
+    #for i in L:
+        #M = M*i
+    factors = []
+    factors.append(primeFactorize(2,primes))
+    for N in range(3,RANGE):
+        print("{} --> {}".format(N, primeFactorize(N, primes)))
+        factors.append(primeFactorize(N, primes))
+    maxPow = []
+    for p in primes:
+        temp = []
+        for f in factors:
+            temp.append(f.count(p))
+        maxPow.append(max(temp))
+    print("{}\n{}".format(primes, maxPow))
+    
+    prod= 1
+    for i in range(len(primes)):
+        prod = prod * (primes[i]**maxPow[i])
         
-    print(M)
-    print(L)
-   
+    print (prod)
