@@ -6,6 +6,7 @@ What is the largest prime factor of the number 600851475143 ?
 """
 
 import math as m
+from eulerpy import primes as p
 
 def isPrimeFactor(N, prime):
     if N % prime == 0:
@@ -25,6 +26,8 @@ def largePrime(n):
 if __name__ == "__main__":
 	
     N = 600851475143 
+    len(p.sieve(N))
+    """
     pf = N
     while pf > 2:
         if largePrime(pf) == True:
@@ -32,4 +35,4 @@ if __name__ == "__main__":
                 print(pf)
                 break
         pf = pf-2
-    
+    """
