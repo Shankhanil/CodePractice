@@ -7,17 +7,14 @@ def _sum(N):
     
     S = ""
     carry = 0
-    for i in range(3):
+    for i in range(49, -1, -1):
         sum = 0
-        for j in range(2, 0, -1):
-        
-            print( N[i][j], end = ",")
-            sum = sum+ int(N[i][j])
-        print("for i = {} sum = {}, carry = {}".format(i, sum, carry))
-        #S.append((sum + carry)%10)
-        S = S + str((sum + carry)%10)
+        for j in range(len(N)):
+            sum = sum+ int(N[j][i])
+        S = str((sum + carry)%10)+ S
+        print("i  = {} pre_Sum = {} Carry = {} post_sum = {} S = {}".format(i, sum, carry, sum + carry, S))
         carry = int(sum/10)
-        print(sum)
+        
     return S
 
 if __name__ == "__main__":
@@ -26,7 +23,7 @@ if __name__ == "__main__":
     N = s.split("\n")
     
     L = _sum(N)
-    #print(L)
+    print(L)
     #_sum(N)
-    #print(L[0:10])
-    
+    print(L[0:10])
+    print(len(L[0:10]))
