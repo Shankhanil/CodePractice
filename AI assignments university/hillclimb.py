@@ -23,7 +23,7 @@ if __name__ == "__main__":
             epoch = epoch + 1
         elif data.iloc[i]['f'] <= OPT and epoch == MAXepoch:
             break
-        elif data.iloc[i]['f'] < OPT:
+        elif data.iloc[i]['f'] > OPT:
             epoch = 0
             pass
     print("OPTIMAL x = {}, f = {}".format(pos, OPT))
