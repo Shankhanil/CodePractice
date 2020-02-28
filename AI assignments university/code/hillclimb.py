@@ -6,7 +6,7 @@ import pandas as pd
 import random as r
 if __name__ == "__main__":
 
-    data = pd.read_csv("../input/hillclimb.csv")
+    data = pd.read_csv("../input/sigfunction.csv")
     
     LEN = data.shape[0]
     I = r.randint(0, LEN)
