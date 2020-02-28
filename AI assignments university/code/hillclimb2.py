@@ -26,7 +26,7 @@ def hillClimb(data, MAXepoch):
 
 if __name__ == "__main__":
 
-    data = pd.read_csv("input/hillclimb.csv")
+    data = pd.read_csv("../input/hillclimb.csv")
     
     LEN = data.shape[0]
     I = r.randint(0, LEN)
@@ -36,5 +36,5 @@ if __name__ == "__main__":
     for MAXepoch in MAXepochL:
         res = res + hillClimb(data, MAXepoch)
     
-    fp1 = open("hillclimbres.txt", "w")
+    fp1 = open("../output/hillclimbres.txt", "w")
     print(res, file = fp1)

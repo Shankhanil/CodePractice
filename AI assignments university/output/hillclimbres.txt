@@ -1,0 +1,63 @@
+Running hill climbing for epoch = 5
+x = 0.8370000000000001		f = -2.65
+x = 0.8370000000000001		f = -2.65
+
+
+OPTIMAL x = 0.332, f = -7.41
+The entire process took 8 iterations
+--------------------------------------------
+Running hill climbing for epoch = 10
+x = 0.8370000000000001		f = -2.65
+x = 0.8370000000000001		f = -2.65
+x = 0.332		f = -7.41
+
+
+OPTIMAL x = 0.493, f = -9.28
+The entire process took 17 iterations
+--------------------------------------------
+Running hill climbing for epoch = 50
+x = 0.8370000000000001		f = -2.65
+x = 0.8370000000000001		f = -2.65
+x = 0.332		f = -7.41
+x = 0.493		f = -9.28
+x = 0.303		f = -9.96
+
+
+OPTIMAL x = -0.33399999999999996, f = -9.96
+The entire process took 109 iterations
+--------------------------------------------
+Running hill climbing for epoch = 100
+x = 0.8370000000000001		f = -2.65
+x = 0.8370000000000001		f = -2.65
+x = 0.332		f = -7.41
+x = 0.493		f = -9.28
+x = 0.303		f = -9.96
+
+
+OPTIMAL x = -0.33399999999999996, f = -9.96
+The entire process took 159 iterations
+--------------------------------------------
+Running hill climbing for epoch = 200
+x = 0.8370000000000001		f = -2.65
+x = 0.8370000000000001		f = -2.65
+x = 0.332		f = -7.41
+x = 0.493		f = -9.28
+x = 0.303		f = -9.96
+
+
+OPTIMAL x = -0.33399999999999996, f = -9.96
+The entire process took 259 iterations
+--------------------------------------------
+Running hill climbing for epoch = 500
+x = 0.8370000000000001		f = -2.65
+x = 0.8370000000000001		f = -2.65
+x = 0.332		f = -7.41
+x = 0.493		f = -9.28
+x = 0.303		f = -9.96
+x = -0.33399999999999996		f = -9.96
+
+
+OPTIMAL x = -0.14, f = -10.09
+The entire process took 779 iterations
+--------------------------------------------
+
