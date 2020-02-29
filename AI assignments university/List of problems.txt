@@ -1,19 +1,4 @@
-1. Implement uninformed search processes: BFS, DFS, DLS, IDS, IBS for 
-	a. Tree
-	b. Graph
-	c. Water Jug problem
-	d. 8 Puzzle problem
-	
-	Output as : Order of nodes visited, solution path. 
-2. Implement UCS in a graph. Output as : Order of nodes visited, solution path, Solution cost. 
-3. Implement Best first greedy search, A* search in a graph. 
+1. Implement uninformed search processes: BFS, DFS, DLS, on graph. File : uninformed.py Output as : Order of nodes visited
 
-	a. Tree
-	b. Graph
-	c. Water Jug problem
-	d. 8 Puzzle problem
-	
-	Output as : Order of nodes visited, solution path
-4. Implement Hill climbing for function optimization
-5. 
+2. Implement Hill climbing for on a univariate function function optimization. Also demonstrate the ridge problem in hill climbing. 
 	
