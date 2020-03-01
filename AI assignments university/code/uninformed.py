@@ -65,7 +65,6 @@ def getGraph(str):
         G.append(temp)
     return G
     
-    
 if __name__ == "__main__":
     fp1 = open("../input/graph10v.txt", "r")
     str = fp1.read()
