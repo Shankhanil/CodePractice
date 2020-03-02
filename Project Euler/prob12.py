@@ -7,7 +7,7 @@ What is the value of the first triangle number to have over five hundred divisor
 import math as m
 def countDiv(N):
     count = 1
-    for i in range(1, int(m.sqrt(N))+1):
+    for i in range(1, int(N/2)):
         if N%i == 0:
             count = count + 1
             
@@ -28,5 +28,5 @@ if __name__ == "__main__":
         t = t+i
         #print(t)
         N = countDiv(t)
-    print(i)
+    print(t)
     
