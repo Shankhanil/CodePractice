@@ -6,6 +6,9 @@ If all the numbers from 1 to 1000 (one thousand) inclusive were written out in w
 
 """
 
+def genEng(N):
+    L = len()
+
 if __name__ == "__main__":
     
     
@@ -20,7 +23,19 @@ if __name__ == "__main__":
     _thous = L[4].split(" ")
     _L = ["", "ty", "hundred" , "thousand"] 
     #532
-    s = "533"
-    _S  = L[0][int(s[0])+ " " + _L[len(s)-1] + " " + L[0][int(s[1])] + " " +_L[len(s) - 2] + " " +L[0][ int(s[2])]
-    
-    print(_S)
+    #print(_unit, _tens)
+    s = "103"
+    l = len(s)
+    res = "x"
+    if l>=2 :
+        if s[l - 2] == '1':
+            res = _tens[int(s[l-1])]
+        elif int(s[l - 2]) >= 2:
+            
+            res = _ty[int(s[l-2]) - 2] + "ty" 
+            
+            if s[l-1] == '0':
+                pass
+            else:
+                res = res + _unit[int(s[l-1])]
+    print(res)
