@@ -12,13 +12,19 @@ import sys
 
 # Complete the minimumBribes function below.
 def minimumBribes(q):
-    L = [0 for i in range(len(q))]
+    L = [i+1 for i in range(len(q))]
     res = []
-    for i in range(len(q)-1 , -1, -1):
-        res.append(q[i] - i-1)
+    for i in range(len(q)):
+        _r = q[i] - i-1
+        #if _r > 0:
+        #    res.append(_r)
+        #else:
+        res.append(_r)
+    print(L)
     print(res)
+    
     if max(res) > 2:
-        print("too chaotic")
+        print("Too chaotic")
     else:
         print(sum(res))
 
